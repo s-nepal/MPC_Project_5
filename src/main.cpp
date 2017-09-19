@@ -134,7 +134,8 @@ int main() {
 
           // assign the steering value and the throttle according to the optimized solution
           steer_value = vars[0];
-          throttle_value = vars[1];
+          throttle_value = 0.6 * vars[1];	// deliberately reduce speed so that the ego vehicle
+          									// has some breathing space
 
           json msgJson;
 
